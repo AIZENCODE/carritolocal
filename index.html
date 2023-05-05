@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://kit.fontawesome.com/925f4b0807.js" crossorigin="anonymous"></script>
+    <!-- Scripts -->
+
+    <!-- Css -->
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Carrito de compras</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav__container container">
+            
+                <h2 class="nav__logo"><span class="nav__logo nav__logo--red">E</span>-Shop</h2>
+            
+          
+            <div id="menu" class="nav__items">
+                <div class="contenedor">
+                    <a href="" class="nav__item">Home</a>
+                    <a href="" class="nav__item">Productos</a>
+                    <a href="" class="nav__item">Services</a>
+                    <div class="nav__icons--remplazo">
+                        <a href="" class="nav__item nav__item--menu">Deseados</a>
+                        <a href="" class="nav__item nav__item--menu">Carrito</a>
+                        <a href="" class="nav__item nav__item--menu">Perfil</a>
+                    </div>
+                    <input type="text" class="nav__search" placeholder="Search" name="" id="">
+
+                    <div class="nav__icons">
+                        <i class="fa-sharp fa-solid fa-heart nav__icon " id="deseados"><span class="nav__num">12</span></i>
+                        <i class="fa-sharp fa-solid fa-cart-shopping nav__icon" id="carro"><span class="nav__num nav__num--carro">0</span></i>
+                        <i class="fa-solid fa-user nav__icon"></i>
+                        <div class="modal__carrito" id="carrito">
+                            <!-- <span class="carrito__vacio">No hay cursos en la lista de deseos </span> -->
+                            <div class="modal__products" id="carritocontenido">
+                           
+                            </div>
+
+                            <!-- 
+                            <div class="carrito__producto">
+                                <img src="img/main/productos/img1.jpg" alt="" class="carrito__img">
+                                <div class="carrito__description">
+                                    <h3 class="carrito__marca">Canon</h3>
+                                    <h2 class="carrito__nombre">Cámara Canon EOS M50 Mark II + 15-45mm IS STM (Gratis: Estuche + Mem.32GB)</h2>
+                                    <div class="carrito__precios">
+                                        <p class="carrito__precio">S/ 4,149.00</p>
+                                        <p class="carrito__precio carrito__precio--subtotal">S/ 4,149.00</p>
+                                    </div>
+
+                                    
+
+                                    <div class="carrito__cantidades">
+                                        <span class="carrito__operador carrito__menos">-</span>
+                                        <span class="carrito__cantidad">1</span>
+                                        <span class="carrito__operador carrito__mas">+</span>
+                                    </div>
+                                    
+                                </div>
+                                <i class="fa-solid fa-circle-xmark carrito__delete"></i>
+                          
+
+                            </div>
+                            
+                            <div class="carrito__producto">
+                                <img src="img/main/productos/img6.jpg" alt="" class="carrito__img">
+                                <div class="carrito__description">
+                                    <h3 class="carrito__marca">Canon</h3>
+                                    <h2 class="carrito__nombre">Cámara Canon EOS M50 Mark II + 15-45mm IS STM (Gratis: Estuche + Mem.32GB)</h2>
+                                    <p class="carrito__precio">S/ 4,149.00</p>
+                                </div>
+                            </div>  -->
+
+                            
+                            <button class="carrito__cta" id="vaciar__carrito">Vaciar Carrito</button>
+                            <div class="productos__total">
+                                <h2>Total</h2>
+                                <span class="total"><span> S/</span><span class="total" id="total">0</span></span>
+                               
+                            </div>
+                           
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <i id="hamburger" class="fa-solid fa-bars icon__hamburger"></i>
+
+        </div>
+    </nav>
+
+    <header class="header">
+
+        <div class="header__container container">
+            <div class="header__content">
+                <h1 class="header__title">
+                    Get the best product at your home
+                </h1>
+
+                <input type="text" class="header__search" placeholder="Search the products">
+
+            </div>
+
+        </div>
+
+
+
+    </header>
+
+
+    <main class="main">
+        <section class="products">
+            <div class="products__container container">
+
+
+
+                <div class="products__categories">
+                    <div class="products__content">
+                        <h3 class="product__category">
+                            Electronics
+                        </h3>
+                        <h3 class="product__category">
+                            Cosmetics
+                        </h3>
+                        <h3 class="product__category product__category--active">
+                            Books
+                        </h3>
+                        <h3 class="product__category">
+                            Furriture
+                        </h3>
+                        <h3 class="product__category">
+                            Cloths
+                        </h3>
+                    </div>
+
+                    <!-- <div class="products__flechas">
+                        <i class="fa-sharp fa-solid fa-arrow-left flecha"></i>
+                        <i class="fa-sharp fa-solid fa-arrow-right flecha"></i>
+                    </div> -->
+
+                </div>
+
+                <div class="products__cards" id="productos">
+
+
+                    <div class="products__card" id="productos">
+                        <img src="img/main/productos/img6.jpg" alt="" class="product__imagen">
+                        <div class="product__content">
+                            <div class="product__text">
+                                <h3 class="product__marca">Canon</h3>
+                                <h2 class="product__title">Cámara Canon EOS M50 Mark II + 15-45mm IS STM (Gratis: Estuche + Mem.32GB)</h2>
+                                <div class="product__price">
+                                    <span>S/</span><span class="precio"> 4149.00</span>
+                                </div>
+                                    
+                            </div>
+                            <div class="product__icons">
+                                <i class="product__icon fa-sharp fa-solid fa-cart-shopping agregar__carrito" data-id="1"></i>
+                                <i class="product__icon product__icon--active fa-sharp fa-solid fa-heart"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <img src="img/main/productos/img1.jpg" alt="" class="product__imagen">
+                        <div class="product__content">
+                            <div class="product__text">
+                                <h3 class="product__marca">Conte</h3>
+                                <h2 class="product__title">Corbata Hombre Christian Lacroix</h2>
+                                <div class="product__price">
+                                    <span>S/</span><span class="precio">69.90</span>
+                                </div>
+                             
+                            </div>
+                            <div class="product__icons">
+                                <i class="product__icon fa-sharp fa-solid fa-cart-shopping agregar__carrito" data-id="2"></i>
+                                <i class="product__icon fa-sharp fa-solid fa-heart"></i>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <img src="img/main/productos/img3.jpg" alt="" class="product__imagen">
+                        <div class="product__content">
+                            <div class="product__text">
+                                <h3 class="product__marca">Sul</h3>
+                                <h2 class="product__title">Encendedor Eléctrico Recargable - Azul</h2>
+                                <div class="product__price">
+                                    <span>S/</span><span class="precio">20.00</span>
+                                </div>
+                              
+                            </div>
+                            <div class="product__icons">
+                                <i class="product__icon fa-sharp fa-solid fa-cart-shopping agregar__carrito" data-id="3"></i>
+                                <i class="product__icon fa-sharp fa-solid fa-heart"></i>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <img src="img/main/productos/img2.jpg" alt="" class="product__imagen">
+                        <div class="product__content">
+                            <div class="product__text">
+                                <h3 class="product__marca">Gucci</h3>
+                                <h2 class="product__title">Guante de Ciclismo Hombre Mountain Gear Hombre Mujer</h2>
+                                <div class="product__price">
+                                    <span>S/</span><span class="precio">59.90</span>
+                                </div>
+                  
+                            </div>
+                            <div class="product__icons">
+                                <i class="product__icon fa-sharp fa-solid fa-cart-shopping agregar__carrito" data-id="4"></i>
+                                <i class="product__icon fa-sharp fa-solid fa-heart"></i>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="products__card">
+                        <img src="img/main/productos/img7.jpg" alt="" class="product__imagen">
+                        <div class="product__content">
+                            <div class="product__text">
+                                <h3 class="product__marca">Calete</h3>
+                                <h2 class="product__title">Guante de Ciclismo Hombre Mountain Gear Hombre Mujer</h2>
+                                <div class="product__price">
+                                    <span>S/</span><span class="precio">4.50</span>
+                                </div>
+                         
+                            </div>
+                            <div class="product__icons">
+                                <i class="product__icon fa-sharp fa-solid fa-cart-shopping agregar__carrito" data-id="5"></i>
+                                <i class="product__icon fa-sharp fa-solid fa-heart"></i>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+        <section class="banner">
+            <div class="banner__container container">
+                <div class="banner__content">
+                    <h2 class="banner__title">Latest Stylish Shoe</h2>
+                    <p class="banner__paragraph">Men 2020 collection shoe </p>
+                    <a href="#" class="banner__cta">See all</a>
+                </div>
+                <img src="img/main/banner/nuevo.png" class="banner__img" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
